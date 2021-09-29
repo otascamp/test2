@@ -1,0 +1,128 @@
+:root{
+	--bg-color: #2c2c3b;
+	--section-color: darkslateblue;
+	--title-color: greenyellow;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: var(--bg-color);
+	height: 1500px;
+}
+nav{
+	/*background-image: url("../mangaimg/image1.5.jpg");*/
+	background-color:#2a3652;
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+
+	position: relative;
+}
+
+/*nav::before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+}*/
+
+h2{
+	color: #fff;
+	letter-spacing: 2px;
+	text-shadow: 0 5px 10px rgba(255,255,255,0.5);
+}
+
+/*Start Section*/
+section{
+	position: relative;
+}
+/*start banner*/
+.banner{
+	background-image: linear-gradient(
+	105deg,
+	rgb(7, 1, 26) 40%,
+	rgba(0,0,0,0.5) 30%,
+	transparent 50%
+	),url("banner.jpg");
+	background-position: center;
+	background-size: cover;
+
+	position: relative;
+}
+
+.banner-container{
+	height: 600px;
+}
+
+.titles{
+	position: absolute;
+	top: 50%;
+	left: 0;
+}
+/*end banner*/
+
+/*start episode*/
+.episode-containers{
+	background-color: #404052;
+	color: #fff;
+	box-shadow: 0 0 5px rgba(255,255,255,0.8);
+
+	position: absolute;
+	top: 80%;
+	left: 100px;
+
+	overflow: hidden;
+}
+
+.episodes{
+	height: 80px;
+	/*background-color: steelblue;*/
+	border-bottom: 2px solid rgba(255,255,255,0.8);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.episodes:last-child{
+	border: 0;
+}
+
+.summery-containers{
+	border-left: 1px solid rgba(255,255,255,0.5);
+	position: relative;
+}
+
+.ratings{
+	float: right;
+	margin-right: 10px;
+}
+
+.summery{
+	width: 300px;
+	height: 350px;
+
+	position: absolute;
+	bottom: 0;
+	right: -20%;
+}
+
+@media (max-width: 500px){
+	.episode-containers{
+		left: 0;
+	}
+}
+/*end episode*/
+
+/*End Section*/
+
+
